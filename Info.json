@@ -1,0 +1,10 @@
+{
+	"Id": "Solasta_IronLegion_Fix",
+	"DisplayName": "Solasta_IronLegion_Fix",
+	"Author": "ultrasonic01",
+	"Version": "1.0.0",
+	"ManagerVersion": "0.22.13a",
+	"GameVersion": "0.4.14b",
+	"AssemblyName": "Solasta_IronLegion_Fix.dll",
+	"EntryMethod": "Solasta_IronLegion_Fix.Main.Load"
+}
