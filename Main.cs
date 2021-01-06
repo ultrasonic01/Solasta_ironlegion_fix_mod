@@ -56,7 +56,6 @@ namespace Solasta_IronLegion_Fix
                     // var newproficiency = ScriptableObject.CreateInstance<FeatureDefinitionProficiency>();
                     var newproficiency2 = RuleDefinitions.ProficiencyType.Armor;
                     var newproflist = ironlegionarmor.Proficiencies;
-                    var newproficiency = new FeatureDefinitionProficiency();
                     AccessTools.Field(ironlegionarmor.GetType(), "proficiencyType").SetValue(ironlegionarmor, newproficiency2);
                     // AccessTools.Field(ironlegionarmor.GetType(), "proficiencyType").SetValue(newproficiency, 2); <- for some reason this option does not works. 
                     // newproflist.Remove("LongswordType");
