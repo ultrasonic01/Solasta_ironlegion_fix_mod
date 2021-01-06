@@ -54,10 +54,10 @@ namespace Solasta_IronLegion_Fix
                     // var ironlegionfeat = DatabaseRepository.GetDatabase<FeatDefinition>().GetElement("MightOfTheIronLegion");
                     var ironlegionarmor = (FeatureDefinitionProficiency)DatabaseRepository.GetDatabase<FeatureDefinition>().GetElement("ProficiencyMightOfTheIronLegionArmor");
                     // var newproficiency = ScriptableObject.CreateInstance<FeatureDefinitionProficiency>();
+                    // AccessTools.Field(ironlegionarmor.GetType(), "proficiencyType").SetValue(ironlegionarmor, 2); Line 57 is option 1 to edit proficiency type. 
                     var newproficiency2 = RuleDefinitions.ProficiencyType.Armor;
                     var newproflist = ironlegionarmor.Proficiencies;
-                    AccessTools.Field(ironlegionarmor.GetType(), "proficiencyType").SetValue(ironlegionarmor, newproficiency2);
-                    // AccessTools.Field(ironlegionarmor.GetType(), "proficiencyType").SetValue(newproficiency, 2); <- for some reason this option does not works. 
+                    AccessTools.Field(ironlegionarmor.GetType(), "proficiencyType").SetValue(ironlegionarmor, newproficiency2); // Line 58 and 60 is option 2 to edit proficiency type. 
                     // newproflist.Remove("LongswordType");
                     // newproflist.Remove("ShortswordType");
                     newproflist.Clear();
