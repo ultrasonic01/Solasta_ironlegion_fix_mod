@@ -1,7 +1,10 @@
-﻿using System;
+using System;
 using System.Reflection;
+using System.Collections;
 using UnityModManagerNet;
 using HarmonyLib;
+using UnityEngine;
+using UnityEditor;
 using I2.Loc;
 
 namespace Solasta_IronLegion_Fix
