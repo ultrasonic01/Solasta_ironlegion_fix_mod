@@ -52,7 +52,7 @@ namespace Solasta_IronLegion_Fix
                 {
                     // Open Iron Legion feat data
                     // var ironlegionfeat = DatabaseRepository.GetDatabase<FeatDefinition>().GetElement("MightOfTheIronLegion");
-                    var ironlegionarmor = DatabaseRepository.GetDatabase<FeatureDefinitionProficiency>().GetElement("ProficiencyMightOfTheIronLegionArmor");
+                    var ironlegionarmor = (FeatureDefinitionProficiency)DatabaseRepository.GetDatabase<FeatureDefinition>().GetElement("ProficiencyMightOfTheIronLegionArmor");
                     // var newproficiency = ScriptableObject.CreateInstance<FeatureDefinitionProficiency>();
                     var newproficiency2 = RuleDefinitions.ProficiencyType.Armor;
                     var newproflist = ironlegionarmor.Proficiencies;
